@@ -1,4 +1,5 @@
 require "gitlab_coverage_viewer/engine"
+require "gitlab_coverage_viewer/coverage_formatter/simple_cov_json_formatter"
 
 module GitlabCoverageViewer
 end
