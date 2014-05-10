@@ -3,7 +3,7 @@ require 'test_helper'
 module GitlabCoverageViewer
   module CoverageFormatter
     class SimpleCovJsonFormatterTest < ActiveSupport::TestCase
-      test "should be able to parse json format of simplecov" do
+      def test_parse
         response_mock = mock(headers: {"Content-Type" => "application/json" })
         project_mock = mock(coverage_base_path: "/path/to/workspace/")
         path = "path/to/sample_controller.rb"
@@ -23,7 +23,7 @@ module GitlabCoverageViewer
         assert_equal result, [1,nil,nil,1,nil]
       end
 
-      test "#desc should output 'Rails/SimpleCov/Json'" do
+      def test_desc
         assert_equal GitlabCoverageViewer::CoverageFormatter::SimpleCovJsonFormatter.desc, "Rails/SimpleCov/Json"
       end
     end

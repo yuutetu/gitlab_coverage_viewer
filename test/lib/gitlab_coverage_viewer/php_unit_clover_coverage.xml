@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1395836457">
+  <project timestamp="1395836457">
+    <file name="/path/to/workspace/path/to/sample.php">
+      <class name="Importer" namespace="global">
+        <metrics methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="76" coveredstatements="75" elements="79" coveredelements="77"/>
+      </class>
+      <line num="25" type="method" name="importArticles" crap="18" count="3"/>
+      <line num="26" type="stmt" count="3"/>
+      <line num="27" type="stmt" count="3"/>
+      <line num="29" type="stmt" count="3"/>
+      <line num="30" type="stmt" count="3"/>
+      <line num="31" type="stmt" count="3"/>
+      <line num="32" type="stmt" count="3"/>
+      <line num="33" type="stmt" count="3"/>
+      <line num="34" type="stmt" count="3"/>
+      <line num="35" type="stmt" count="3"/>
+      <line num="36" type="stmt" count="3"/>
+      <line num="37" type="stmt" count="3"/>
+      <line num="38" type="stmt" count="3"/>
+      <line num="39" type="stmt" count="3"/>
+      <line num="40" type="stmt" count="3"/>
+      <line num="42" type="stmt" count="3"/>
+      <line num="43" type="stmt" count="3"/>
+      <line num="44" type="stmt" count="3"/>
+      <line num="45" type="stmt" count="3"/>
+      <line num="46" type="stmt" count="3"/>
+      <metrics loc="144" ncloc="104" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="76" coveredstatements="75" elements="79" coveredelements="77"/>
+    </file>
+    <metrics files="2" loc="15143" ncloc="12627" classes="29" methods="417" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7705" coveredstatements="75" elements="8122" coveredelements="77"/>
+  </project>
+</coverage>
