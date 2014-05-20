@@ -1,3 +1,4 @@
+require "faraday"
 require_dependency "gitlab_coverage_viewer/application_controller"
 
 module GitlabCoverageViewer
@@ -12,7 +13,11 @@ module GitlabCoverageViewer
     before_filter :blob
 
     def show
-      # not implement
+      response = Faraday.get @project.coverage_url_with_commit_id @commit.id
+      formatter = Object.const_get("GitlabCoverageViewer")
+                        .const_get("CoverageFormatter")
+                        .const_get(@project.coverage_parse_type.classify)
+      @coverage = formatter.parse response, @project, @path
     end
 
     private

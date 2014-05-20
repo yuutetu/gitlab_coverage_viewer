@@ -17,8 +17,10 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.0.2"
+  s.add_dependency "faraday"
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec"
   s.add_development_dependency "mocha"
+  s.add_development_dependency "haml-rails"
 end
